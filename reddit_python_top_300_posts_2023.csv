@@ -1,0 +1,203 @@
+Title,Upvotes,Flair,Num_Comments,Created_UTC
+The PSF has withdrawn $1.5 million proposal to US government grant program,1464,News,362,1761578253.0
+Petition to rename Python 3.14 to Pithon!,1455,Discussion,130,1741181995.0
+A new type of interpreter has been added to Python 3.14 with much better performance,1182,News,115,1739034861.0
+PEP 751 (a standardized lockfile for Python) is accepted!,1162,News,141,1743441297.0
+Summarized how the CIA writes Python,1096,News,96,1734288183.0
+Python 3.14 Released,1081,News,103,1759847542.0
+The creators of ruff and uv are building a new static type checker for Python,931,News,156,1738233149.0
+Stop building UI frameworks in Python,930,Discussion,342,1757330242.0
+How Rust is quietly taking over the Python ecosystem,930,Resource,358,1738746802.0
+"Python 1.0.0, released 31 years ago today",865,Meta,41,1738055833.0
+Python feels easy… until it doesn’t. What was your first real struggle?,829,Discussion,565,1756457392.0
+The logging module is from 2002. Here's how to use it in 2025,810,Tutorial,51,1751479818.0
+Update: Should I give away my app to my employer for free?,803,Discussion,92,1757688420.0
+"Microsoft layoffs hit Faster CPython team - including the Technical Lead, Mark Shannon",783,News,119,1747273179.0
+What CPython Layoffs Taught Me About the Real Value of Expertise,754,Discussion,228,1747454483.0
+Just a reminder to never blindly trust a github repo,740,Discussion,127,1748208182.0
+"Ty: An extremely fast Python type checker and language server, written in Rust.",734,News,98,1746631075.0
+Why do engineers still prefer MATLAB over Python?,728,Discussion,383,1752612697.0
+I Built an Open-Source Algo Trading Framework for Instant Backtests &amp; Live Deployment,726,Showcase,25,1740323852.0
+What is a Python thing you slept on too long?,702,Discussion,296,1755471895.0
+Stop trying to catch exceptions when its ok to let your program crash,693,Discussion,160,1753468004.0
+There was a fundamental mistake in our codebase for years and noone noticed.,686,Discussion,137,1744292751.0
+"Free-threaded (multicore, parallel) Python will be fully supported starting Python 3.14!",673,News,83,1752070193.0
+I accidentally built a vector database using video compression,668,Discussion,89,1748493792.0
+Be careful on suspicious projects like this,655,Discussion,73,1753728453.0
+TIL you can use else with a while loop,641,Discussion,199,1740866306.0
+Today I learned that Python doesn't care about how many spaces you indent as long as it's consistent,589,Tutorial,194,1758224996.0
+"After #ruff and #uv, #astral announced their next tool for the python ecosystem",589,News,119,1746283218.0
+PyCon US 2025: Keynote Speaker - Cory Doctorow on Enshitification,589,News,62,1747966971.0
+Is UV package manager taking over?,569,Discussion,339,1739933535.0
+For those that use Python in their job: Do you like Python?,566,Discussion,484,1735908998.0
+PEP 750 - Template Strings - Has been accepted,551,News,175,1744314751.0
+Performance gains of the Python 3.14 tail-call interpreter were largely due to benchmark errors,544,News,35,1741599212.0
+"I didn't want to go, but PyCharm finally drove me into the arms of VSCode, after 5+ years.",541,Discussion,212,1741726204.0
+"Axiom, a new kind of ""truth engine"" as a tool to fight my own schizophrenia. Now open-sourcing it.",526,Showcase,316,1754404494.0
+The hand-picked selection of the best Python libraries and tools of 2024 – 10th edition!,530,Discussion,82,1733919274.0
+I built a tool that tells you how hard a website is to scrape,522,Showcase,51,1760914255.0
+PEP 798 – Unpacking in Comprehensions,513,News,43,1753145189.0
+Why Rust has so much marketing power ?,503,Discussion,291,1738318288.0
+Self-contained Python scripts with uv,488,Tutorial,76,1743288826.0
+New to coding. Is it always this difficult?,489,Tutorial,325,1740164702.0
+PEP 810 – Explicit lazy imports,479,News,154,1759501715.0
+Design Patterns You Should Unlearn in Python-Part1,478,Resource,109,1750344362.0
+"I made a game that is teaching you Python! :) After more than three years, I finally released it!",473,News,74,1760189386.0
+"But really, why use ‘uv’?",464,Discussion,235,1754095271.0
+Setuptools 78.0.1 breaks the internet,462,News,186,1742841256.0
+Whats your favorite Python trick or lesser known feature?,454,Discussion,289,1756218712.0
+Rio Hits 100K Downloads &amp; 2K GitHub Stars – Open Source Python Web Apps,448,News,73,1741355838.0
+UV is helping me slowly get rid of bad practices and improve company’s internal tooling.,440,Discussion,114,1753808085.0
+Should I give away my app to my employer for free?,447,Discussion,276,1757433058.0
+Python is big in Europe,444,News,75,1741423703.0
+"TIL that a function with 'yield' will return a generator, even if the 'yield' is conditional",431,Discussion,77,1746739574.0
+"There is such a thing as ""too much TQDM""",423,Discussion,67,1751852321.0
+What the hell is going on with type hinting these days,424,Discussion,265,1740060505.0
+uv after 0.5.0 - might be worth replacing Poetry/pyenv/pipx,401,News,128,1731515982.0
+Python 3.13 is 10% slower than 3.12 for my file parser,396,Discussion,70,1758468539.0
+My favorite new features in Python 3.14,395,News,50,1759854891.0
+Stop uploading your code to sketchy “online obfuscators” like freecodingtools.org,396,Discussion,60,1759079005.0
+uv cheatsheet with most common/useful commands,391,Resource,72,1760085743.0
+PyPI security funding in limbo as Trump executive order pauses NSF grant reviews,385,News,46,1738099624.0
+Breaking news: Guido van Rossum back as Python's Benevolent Dictator for Life (BDFL)!,379,:pythonLogo: Official Event,25,1743517816.0
+uv starting to overtake Poetry in package download,386,News,187,1742199126.0
+"Happy Birthday, Python! 🎉🐍",381,Discussion,25,1740041609.0
+Potato - A Lightweight Tool for Debugging and Testing Python Code,384,Resource,40,1736114710.0
+Type hints helped my job interview,379,Discussion,69,1752534105.0
+Microsoft Fired Faster CPython Team,365,News,25,1747437766.0
+Make your module faster in benchmarks by using tariffs on competing modules!,367,Resource,35,1745274190.0
+Python 3.14: time for a release name?,362,Meta,50,1753569334.0
+The GIL is actually going away — Have you tried a no-GIL Python?,352,Discussion,118,1750024899.0
+"Which useful Python libraries did you learn on the job, which you may otherwise not have discovered?",348,Discussion,157,1748075493.0
+"Introducing Kreuzberg: A Simple, Modern Library for PDF and Document Text Extraction in Python",334,Showcase,83,1738404532.0
+I actually used Python practically the first time today!,332,Meta,44,1746640491.0
+I built my own asyncio to understand how async I/O works under the hood,330,Tutorial,33,1746551002.0
+"Made a self-hosted ebook2audiobook converter, supports voice cloning and 1107+ languages :)",329,Showcase,30,1735273206.0
+My side project has gotten 420k downloads and 69 GitHub stars (noice!),326,Showcase,35,1732734937.0
+Appreciation post for PyCharm,331,Discussion,62,1740127437.0
+How common is Pydantic now?,327,Discussion,193,1761166390.0
+Does is actually matter that Python is a simple language?,324,Discussion,275,1744471491.0
+Follow the yearly PyCon if you want to get better at using Python,320,Resource,17,1740146719.0
+I made a script to download Spotify playlists without login,314,Showcase,95,1740455170.0
+Solving Wordle using uv's dependency resolver,316,Showcase,14,1751784182.0
+Why is Python type hinting so maddening compared to other implementations?,316,Discussion,160,1759761917.0
+Tired of tracing code by hand?,308,Resource,60,1748672374.0
+I built my own PyTorch from scratch over the last 5 months in C and modern Python.,307,Showcase,39,1736176134.0
+Test your knowledge of f-strings,306,Resource,23,1752923459.0
+"Astral's first paid offering announced - pyx, a private package registry and pypi frontend",305,News,71,1755114910.0
+I built a python library for realistic web scraping and captcha bypass,306,Resource,45,1741404846.0
+I made a vs code extension that insults you if you copy &amp; paste AI generated code,303,Showcase,36,1757960456.0
+Python Steering Council rejects PEP 736 – Shorthand syntax for keyword arguments at invocation,302,News,175,1741905189.0
+Michael Foord has passed away recently,300,Meta,14,1738363541.0
+FastAPI is usually the right choice,302,Tutorial,151,1750811533.0
+Approved: PEP 798: Unpacking in Comprehensions &amp; PEP 810: Explicit lazy imports,296,News,51,1762188060.0
+I published my third open-source python package to pypi,287,Showcase,27,1739610047.0
+"Lost Chapter of Automate the Boring Stuff: Audio, Video, and Webcams",287,Tutorial,30,1751996834.0
+Deply: keep your python architecture clean,284,Showcase,61,1731861123.0
+Simple Python expression that does complex things?,282,Discussion,117,1757128062.0
+Why would I not use Visual Studio code,282,Discussion,172,1759162454.0
+[Quiz] How well do you know f-strings? (made by Armin Ronacher),280,Resource,45,1752881590.0
+Why Python's deepcopy() is surprisingly slow (and better alternatives),278,Resource,66,1754006778.0
+Python gave me the chance to finally execute a personal project for something I actually needed,278,Discussion,35,1740580151.0
+Meta: Limiting project posts to a single day of the week?,276,Meta,40,1761508682.0
+RenderCV v2 is released! Write your CV/resume as YAML.,275,Showcase,47,1737929915.0
+JetBrains will no longer provide binary builds of PyCharm Community Edition after version 2025.2,277,News,136,1746824843.0
+NiceGUI 3.0: Write web interfaces in Python. The nice way.,273,News,54,1759754016.0
+Kreuzberg v3.11: the ultimate Python text extraction library,272,Showcase,39,1754812927.0
+What small Python automation projects turned out to be the most useful for you?,270,Discussion,119,1758788375.0
+Is uvloop still faster than asyncio's event loop in python3.13?,275,Discussion,41,1749604292.0
+My open source project gets 1100+ monthly downloads,267,Meta,19,1750231764.0
+A Modern Python Repository Template with UV and Just,266,Showcase,75,1739214686.0
+FastAPI Deconstructed: Anatomy of a Modern ASGI Framework,265,Tutorial,20,1738490384.0
+Hatchet - a task queue for modern Python apps,264,Showcase,30,1744753932.0
+I Made a Drop-In Wrapper For `argparse` That Automatically Creates a GUI Interface,258,Showcase,32,1735432032.0
+"Knowing a little C, goes a long way in Python",260,Discussion,33,1755349783.0
+What's with this random surge in vibe coded OSS shared in this sub?,259,Meta,40,1752611164.0
+"Python users, how did you move on from basics to more complex coding?",256,Discussion,160,1736365161.0
+Rant: use that second expression in `assert`!,251,Discussion,137,1756984980.0
+"What do you think is the most visually appealing or 'good-looking' Python GUI library, and why?",252,Discussion,119,1732552097.0
+"Logly 🚀 — a Rust-powered, super fast, and simple logging library for Python",250,Showcase,134,1759311808.0
+I made a terminal-based game that uses LLMs -- Among LLMs: You are the Impostor,249,Showcase,27,1757915448.0
+logging.getLevelName(): Are you serious?,249,Discussion,87,1739960318.0
+Robyn (finally) supports Python 3.13 🎉,246,News,36,1749447358.0
+What Feature Do You *Wish* Python Had?,246,Discussion,566,1747732321.0
+Forget metaclasses; Python’s `__init_subclass__` is all you really need,247,Discussion,60,1754053017.0
+What are your favorite modern libraries or tooling for Python?,243,Discussion,198,1749140627.0
+What packages should intermediate Devs know like the back of their hand?,245,Discussion,179,1754586479.0
+Python in DevOps: My Favorite Tools,238,Discussion,33,1736448160.0
+"Introducing Pyrefly: A fast type checker and IDE experience for Python, written in Rust",238,News,68,1747337360.0
+Pip 25.1 is here - install dependency groups and output lock files!,243,News,33,1745696351.0
+Pyrefly: Type Checking 1.8 Million Lines of Python Per Second,236,Discussion,62,1762178086.0
+FastAPI Guard - A FastAPI extension to secure your APIs,236,Showcase,36,1739115328.0
+Design Patterns You Should Unlearn in Python-Part2,236,Resource,37,1750494138.0
+New Python Project: UV always the solution?,231,Discussion,235,1744850797.0
+funlog: Why don't we use decorators for logging more often?,227,Showcase,55,1743190385.0
+T-Strings: Python's Fifth String Formatting Technique?,224,Resource,80,1761052596.0
+Anyone used UV package manager in production,228,Discussion,92,1740479374.0
+I Made a VR Shooter in Python,223,Showcase,18,1737253863.0
+My Python based open-source project PdfDing is receiving a grant,223,Showcase,13,1761466184.0
+"A modern Python Project Cookiecutter Template, with all the batteries included.",220,Showcase,32,1750095215.0
+Python 3.14 | Upcoming Changes Breakdown,225,News,45,1744208821.0
+"Must know Python libraries, new and old?",225,Resource,109,1738775941.0
+TIL: `uv pip install` doesn't compile bytecode installation,221,Resource,35,1737575050.0
+"Tiny Python library that turns functions into GUI apps
+",219,Resource,31,1736208775.0
+What Are Your Favorite Python Repositories?,219,Discussion,107,1740993932.0
+List of 87 Programming Ideas for Beginners (with Python implementations),218,Resource,29,1758057215.0
+Python Type Hints and why you should use them.,220,Resource,119,1739730513.0
+"I benchmarked Python's top HTTP clients (requests, httpx, aiohttp, etc.) and open sourced it",220,Showcase,56,1743366469.0
+Zuban is now Open Source,216,News,41,1756904141.0
+"PSA: You should remove ""wheel"" from your build-system.requires",214,News,21,1744327744.0
+What is the most elegant python code you have seen?,219,Discussion,66,1752819671.0
+Recommending `prek` - the necessary Rust rewrite of `pre-commit`,214,Discussion,108,1760525171.0
+Polars vs Pandas,218,Discussion,176,1742516255.0
+"bulletchess, A high performance chess library",214,Showcase,9,1748559889.0
+PEP 802 – Display Syntax for the Empty Set,212,News,269,1754958976.0
+I built xlwings Lite as an alternative to Python in Excel,208,News,55,1743414247.0
+Python Pandas Library not accepted at workplace - is it normal?,206,Discussion,170,1738801627.0
+PyPDFForm v3.0.0 has released,203,News,18,1750770801.0
+"FastAPI’s creator on the framework’s popularity, FastAPI Cloud, self-taught developers, and more",202,News,7,1762348127.0
+"Advice on logging libraries: Logfire, Loguru, or just Python's built-in logging?",204,Discussion,76,1760289747.0
+Streamlit Alternatives with better State Management,198,Discussion,66,1746978126.0
+"Effective Python Developer Tooling in December 2024
+",200,Resource,51,1734796622.0
+glyphx: A Better Alternative to matplotlib.pyplot – Fully SVG-Based and Interactive,200,Showcase,100,1745189356.0
+Introducing Eventure: A Powerful Event-Driven Framework for Python,198,Showcase,12,1742116494.0
+I rewrote my programming language from Python into Go to see the speed up.,199,Showcase,64,1736915880.0
+pd.col: Expressions are coming to pandas,197,News,84,1756370959.0
+"pyleak - detect leaked asyncio tasks, threads, and event loop blocking in Python",191,Showcase,12,1749017045.0
+"I created this polygon screenshot tool for myself, I must say it may be useful to others!",191,Showcase,17,1756143858.0
+"Open Source Load Testing with Locust: 13 years, 60 million downloads later",195,Discussion,10,1737730994.0
+What's the cheapest way to host a python script?,195,Discussion,130,1733208551.0
+"Ruff users, what rules are using and what are you ignoring?",189,Discussion,65,1748031408.0
+A complete-ish guide to dependency management in Python,193,Resource,85,1731408423.0
+Python 3.15 Alpha Released,189,News,35,1760457682.0
+Built my own link customization tool because paying $25/month wasn't my jam ,187,Showcase,32,1734698781.0
+Bringing NumPy's type-completeness score to nearly 90%,187,Discussion,35,1759842607.0
+"My python based selfhosted PDF manager, viewer and editor reached 600 stars on github",189,Showcase,8,1738877502.0
+How often does Python allocate?,190,Resource,41,1762278614.0
+Matlab's variable explorer is amazing. What's pythons closest?,190,Discussion,124,1741950929.0
+Train an LLM from Scratch,185,Showcase,17,1736661225.0
+Textual 4.0 released - streaming markdown support,187,News,50,1752335156.0
+Where are people hosting their Python web apps?,185,Discussion,146,1751037460.0
+"🚀 A Beautiful Python GUI Framework with Animations, Theming, State Binding &amp; Live Hot Reload",189,Showcase,60,1750934476.0
+"Querying 10M rows in 11 seconds: Benchmarking ConnectorX, Asyncpg and Psycopg vs QuestDB",187,Discussion,16,1747138529.0
+What are your experiences with using Cython or native code (C/Rust) to speed up Python?,183,Discussion,55,1745585256.0
+Best practices for using Python &amp; uv inside Docker,181,Tutorial,111,1760166755.0
+Granian 2.5 is out,185,News,8,1753908441.0
+Meet Jonq: The jq wrapper that makes JSON Querying feel easier,184,Showcase,27,1741490804.0
+PEP 806 – Mixed sync/async context managers with precise async marking,184,News,22,1758847467.0
+I hate Microsoft Store,181,Meta,118,1752429225.0
+My journey to scale a Python service to handle dozens of thousands rps,178,Resource,67,1752921690.0
+Lihil — a high performance modern web framework for enterprise web development in python,177,Showcase,62,1742644502.0
+enso: A functional programming framework for Python,176,Showcase,64,1758252546.0
+FastAPI + Supabase Auth Template,174,Showcase,6,1748956533.0
+Why not just plot everything in numpy?! P.2.,174,Showcase,23,1740610263.0
+Why doesn't for-loop have it's own scope?,176,Discussion,282,1761718080.0
+I wrote on post on why you should start using polars in 2025 based on personal experiences,175,Discussion,39,1743699648.0
+Pydantic v2.12 release (Python 3.14),173,News,14,1759948013.0
+"I pushed Python to 20,000 requests sent/second. Here's the code and kernel tuning I used.",174,Showcase,57,1759822077.0
+Adding asyncio.sleep(0) made my data pipeline (150 ms) not spike to (5500 ms),169,Discussion,39,1756083645.0
+Should I be using more data structures?,173,Discussion,47,1741299061.0
+Tach - A Python tool to enforce dependencies,171,Showcase,83,1738685272.0
+Why are all the task libraries and frameworks I see so heavy?,171,Discussion,55,1755355632.0
