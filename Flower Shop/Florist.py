@@ -6,10 +6,6 @@ class Florist:
     """
     CLass Representing a florist in flower shop.
 
-    Attributes:
-        name (str): Name of the florist.
-        speciality (str): Speciality bouquet type of the florist.
-
     Methods:
         monthly_salary():
              Calculate the monthly salary of the florist.
@@ -21,8 +17,8 @@ class Florist:
             String representation of the florist.
     """
 
-    Fixed_Hourly_Rate = 15.50
-    Fixed_Monthly_Hours = 80
+    FIXED_HOURLY_RATE = 15.50
+    FIXED_MONTHLY_HOURS = 80
 
     def __init__(self, name, speciality=None):
         """
@@ -38,8 +34,8 @@ class Florist:
         
         self.name = name
         self.speciality = speciality if speciality else "General"
-        self.hourly_rate = Florist.Fixed_Hourly_Rate
-        self.monthly_hours = Florist.Fixed_Monthly_Hours
+        self.hourly_rate = Florist.FIXED_HOURLY_RATE
+        self.monthly_hours = Florist.FIXED_MONTHLY_HOURS
 
     def monthly_salary(self):
         """
