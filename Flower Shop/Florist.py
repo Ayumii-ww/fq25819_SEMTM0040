@@ -26,17 +26,13 @@ class Florist:
     Fixed_Hourly_Rate = 15.50
     Fixed_Monthly_Hours = 80
 
-    def __init__(self, name, speciality=None, 
-                 hourly_rate=Fixed_Hourly_Rate, 
-                 monthly_hours=Fixed_Monthly_Hours):
+    def __init__(self, name, speciality=None):
         """
         Initialize a Florist instance.
         
         Parameters:
             name (str): Name of the florist.
             speciality (str, optional): Speciality bouquet type. Defaults to None.
-            hourly_rate (float, optional): Hourly rate of the florist. Defaults to Fixed_Hourly_Rate = 15.5.
-            monthly_hours (float, optional): Monthly working hours. Defaults to Fixed_Monthly_Hours = 80.
         """
         
         if not name:
@@ -44,8 +40,8 @@ class Florist:
         
         self.name = name
         self.speciality = speciality if speciality else "General"
-        self.hourly_rate = hourly_rate
-        self.monthly_hours = monthly_hours
+        self.hourly_rate = Florist.Fixed_Hourly_Rate
+        self.monthly_hours = Florist.Fixed_Monthly_Hours
 
     def monthly_salary(self):
         """
@@ -93,7 +89,7 @@ class Florist:
             return f"Florist Name: {self.name}, (Speciality: {self.speciality})"
         return self.name
     
-    
+
                 
 
 
