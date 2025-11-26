@@ -9,8 +9,6 @@ class Florist:
     Attributes:
         name (str): Name of the florist.
         speciality (str): Speciality bouquet type of the florist.
-        hourly_rate (float): Fixed Hourly rate of the florist.
-        monthly_hours (float): Fixed Monthly working hours of the florist.
 
     Methods:
         monthly_salary():
