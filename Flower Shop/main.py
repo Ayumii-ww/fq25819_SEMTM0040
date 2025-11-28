@@ -1,12 +1,19 @@
-from FlowerShop import FlowerShop
-def get_input(prompt,default=None):
-   """
-   Read integer from user but if press enter return default
-   """
+# Vichaya Tedumrongvanich (fq25819, SEMT0040 Summative Assessment)
+# main.py
 
-   while True: 
-        raw= input(prompt).strip()
-        if raw=="":
+from FlowerShop import FlowerShop
+
+
+def get_input(prompt, default=None):
+    """
+    Helper to read an integer from input, with optional default.
+
+    Keeps asking until user gives a valid non-negative integer.
+    If default is given, pressing Enter with no input returns the default.
+    """
+    while True:
+        raw = input(prompt).strip()
+        if not raw:
             if default is not None:
                 return default
             print("Please enter a number.")
@@ -14,44 +21,108 @@ def get_input(prompt,default=None):
         try:
             value = int(raw)
             if value < 0:
-                print("Please enter a non-negative number.")
+                print("Please enter a non-negative integer.")
                 continue
             return value
         except ValueError:
-            print("Invalid input. Please enter a valid number.")
+            print("Invalid input, please enter an integer.")
 
-def main():
-    print("----------------------------------------------------------------")
-    print("Welcome to the FlowerShop Simulator!!")
-    print("----------------------------------------------------------------\n")
 
-    months = get_input("Enter number of months to simulate (default 6): ", default=6)
+def hire_initial_florists(shop):
+    """
+    Ensure at least one florist is hired at the very start of the game.
+    """
+    print("You must have at least one florist to start.\n")
+    while len(shop.florists) == 0:
+        name = input("Enter florist name: ").strip()
+        if not name:
+            print("Name cannot be empty.\n")
+            continue
 
-    shop = FlowerShop()
-    print()
+        speciality = input(
+            "Enter speciality bouquet name (or leave blank for none): "
+        ).strip()
+        if not speciality:
+            speciality = None
 
-    for month in range(1, months + 1):
-        print(f"Month: {months}\n")
+        try:
+            shop.add_florist(name, speciality)
+        except ValueError as e:
 
-        print("Before the month starts,there are some owner actions for you to carry out.\n"
-              "First, review the numer of staff,Then decide how many bouquets to sell.\n")
-    
-        print(f"Current Florists: {len(shop.florists)}")
+            # Duplicate name or too many florists (more than 4)
+            print(e)
+            print("Please enter a different florist.\n")
 
-        add_florist = get_input("How many florists would you like to hire? (0 for none): ")
-        for i in range(add_florist):
-            name = input(f"Enter name for florist {i + 1}: ").strip()
+
+def manage_florists(shop):
+    """
+    Manage hiring or firing florists at the start of each month.
+    """
+
+    print(f"\nCurrent number of florists: {len(shop.florists)}")
+    if shop.florists:
+        print("Current staff:")
+        for florist in shop.florists:
+            print(f"   - {florist}")
+    else:
+        print("Current staff: []")
+
+
+    # Hiring
+    hire_count = get_input(
+        "How many florists would you like to **HIRE** this month? (0 for none): ",
+         default=0
+    )
+
+    if hire_count > 0:
+        for i in range(hire_count):
+            if len(shop.florists) >= 4:
+                print("You already have the maximum of 4 florists. Cannot hire more.\n")
+                break
+
+            while True:
+                name = input("Please input florist name: ").strip()
+                if not name:
+                    print("Name cannot be empty.")
+                    continue
+
+                speciality = input(
+                    "Enter speciality bouquet name (or leave blank for none): "
+                ).strip()
+                if not speciality:
+                    speciality = None
+
+                try:
+                    shop.add_florist(name, speciality)
+                    break
+                except ValueError as exc:
+                    print(exc)
+                    print("Please try a different name.\n")
+
+    # Firing
+    # Must keep at least 1 florist
+    max_fire = max(0, len(shop.florists) - 1)
+    if max_fire == 0:
+        print("You must employ at least one florist. No one can be removed.\n")
+        return
+
+    fire_count = get_input("How many florists would you like to **fire** this month? (0 for none): ", default=0)
+
+    if fire_count > max_fire:
+        print(f"You can only fire up to {max_fire} florists this month.")
+        fire_count = max_fire
+
+    for _ in range(fire_count):
+        while True:
+            name = input("Enter the name of the florist to remove: ").strip()
             if not name:
-                print("Florist name cannot be empty. Please try again.")
+                print("Name cannot be empty.")
                 continue
-            speciality = input(f"Enter speciality for florist {i + 1} (or press Enter for none): ").strip()
             try:
-                shop.add_florist(name, speciality if speciality else None)
-            except ValueError as e:
-                print(" Error:", e)
-            
-       
+                shop.remove_florist(name)
+                break
+            except ValueError as exc:
+                print(exc)
+                print("Please enter a valid florist name.\n")
 
 
-print(main())
-      
