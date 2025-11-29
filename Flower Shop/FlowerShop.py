@@ -131,10 +131,8 @@ class FlowerShop:
             bouquet = self.bouquets[bouquet_name]
             total_required_minutes += bouquet.time_preps * quantity
             
-            avaliable = self.total_labor_time()
-            if total_required_minutes > avaliable:
-                return False
-            return True
+        avaliable = self.total_labor_time()
+        return total_required_minutes <= avaliable
         
     ## Function pay labor
     def florists_pay(self):
@@ -171,6 +169,7 @@ class FlowerShop:
         self.cash_balance -= cost
         return cost
     
+
     ## Supply needed for demand
     def supply_needed(self, production_plan):
         """
@@ -248,10 +247,10 @@ class FlowerShop:
         Returns:
             dict: Summary of end-of-month financials.
         """
-        rent = self.rent_pay()
+        income = self.produce_bouquets(production_plan)
         labor_cost = self.florists_pay()
         greenhouse_cost = self.greenhouse_costs()
-        income = self.produce_bouquets(production_plan)
+        rent = self.rent_pay()
         self.greenhouse.depreciation()
 
 

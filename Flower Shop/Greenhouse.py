@@ -84,6 +84,11 @@ class Greenhouse:
         lost_roses = math.ceil(self.roses * Greenhouse.DEPRECI_ROSES)
         lost_daisies = math.ceil(self.daisies * Greenhouse.DEPRECI_DAISIES)
 
+        self.grennery -= lost_greenery
+        self.roses -= lost_roses
+        self.daisies -= lost_daisies
+
+        
     def least_supplies(self, needed_greenery, needed_roses, needed_daisies):
         """
         Check if greenhouse has least quantities
