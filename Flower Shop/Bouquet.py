@@ -6,6 +6,7 @@ class Bouquet:
     Class Representing a bouquet in flower shop.
     
     Methods:
+
         __str__():
             String representation of the bouquet.
     """

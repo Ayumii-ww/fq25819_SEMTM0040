@@ -56,7 +56,7 @@ class Florist:
 
         return int(self.monthly_hours * 60)
     
-    def speciality_minutes(self, bouquet_name, base_minutes):
+    def speciality_minutes(self, bouquet_name, base_minutes): #Extension: Speciality florists
         """
         Calculate time taken for a bouquet based on speciality.
 
@@ -79,9 +79,11 @@ class Florist:
         Returns:
             str: Formatted string with florist details.
         """
-        if self.speciality:
-            return f"Florist Name: {self.name}, (Speciality: {self.speciality})"
-        return self.name
+        if self.speciality is None:
+            return f"{self.name} (No Speciality)"
+        else: 
+            return f"{self.name} ({self.speciality})"
+        
     
 
                 

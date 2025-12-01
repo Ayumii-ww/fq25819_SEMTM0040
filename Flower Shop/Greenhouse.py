@@ -22,8 +22,8 @@ class Greenhouse:
             Restock the greenhouse to maximum capacity.
     """
 
-    MAX_GREENERY =  400  # Maximum greenery capacity of the greenhouse
-    MAX_ROSES = 200      # Maximum roses capacity of the greenhouse
+    MAX_GREENERY = 400  # Maximum greenery capacity of the greenhouse
+    MAX_ROSES = 200  # Maximum roses capacity of the greenhouse
     MAX_DAISIES = 250    # Maximum daisies capacity of the greenhouse
 
     DEPRECI_GREENERY = 0.05  # Depreciation rate for greenery
@@ -88,7 +88,7 @@ class Greenhouse:
         self.roses -= lost_roses
         self.daisies -= lost_daisies
 
-        
+
     def least_supplies(self, needed_greenery, needed_roses, needed_daisies):
         """
         Check if greenhouse has least quantities
@@ -142,7 +142,6 @@ class Greenhouse:
         self.daisies = Greenhouse.MAX_DAISIES
 
         return total_cost
-
 
 
         

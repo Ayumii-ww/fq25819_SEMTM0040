@@ -34,6 +34,11 @@ class FlowerShop:
         self.florists = []
         self.greenhouse = Greenhouse()
 
+        #Extension: Loan system when bankrupt
+        self.loan_balance = 0.00
+        self.loan_interest_rate = 0.05 #5% interest rate per month
+        self.max_loan = 50000.00
+
         self.bouquets = {} #Bonquet objected stored in dictionary
 
         self.bouquets["Fern-tastic"] = Bouquet(
@@ -125,11 +130,15 @@ class FlowerShop:
         
         # Loop through each bouquet in the production plan
         for bouquet_name, quantity in production_plan.items():
-            if bouquet_name not in self.bouquets:
-                raise ValueError(f"Bouquet '{bouquet_name}' not found in shop.")
-            
+
             bouquet = self.bouquets[bouquet_name]
-            total_required_minutes += bouquet.time_preps * quantity
+
+            fastest_time = min(
+                florist.speciality_minutes(bouquet_name, bouquet.time_preps)
+                for florist in self.florists
+            )
+            
+            total_required_minutes += fastest_time * quantity
             
         avaliable = self.total_labor_time()
         return total_required_minutes <= avaliable
@@ -343,6 +352,70 @@ class FlowerShop:
                     return FLORAGROW_DISTRIBUTORS["greenery"]
 
             print("Invalid input. Please enter 0, 1, or i.\n")
+
+    #Extension helper method
+    def has_loan(self):
+        """
+        Check if the shop has owes any bank loan.
+        """
+        return self.loan_balance > 0
+    
+    def take_loan(self, amount):
+        """
+        Take a bank loan
+        
+        Parameters:
+            amount (float): Amount to loan.
+        """
+
+        if amount <= 0:
+            raise ValueError("Loan amount must be positive.")
+        
+        if self.loan_balance + amount > self.max_loan:
+            raise ValueError(
+                f"Cannot borrow more than £{self.max_loan:.2f} in total. "
+                f"Current loan: £{self.loan_balance:.2f}."
+            )
+        
+        self.loan_balance +=amount
+        self.cash_balance += amount
+        print(f"\nYou have taken a bank loan of £{amount:.2f}.")
+        print(f"Total loan outstanding: £{self.loan_balance:.2f}.\n")
+
+    def apply_loan_interest(self):
+        """
+        Apply monthly interest to the outstanding loan balance.
+        Interest is added to the loan balance (compound interest).
+        """
+        if self.loan_balance <= 0 or self.cash_balance <= 0: 
+            return 0.0
+        interest = self.loan_balance * self.loan_interest_rate
+        self.loan_balance += interest
+        print(f"\nAn interest of £{interest:.2f} has been applied to your loan.")
+        print(f" Total loan balance is now £{self.loan_balance:.2f}.\n")
+        return interest
+    
+    def auto_repay_loan(self):
+        """
+        Automatically repay part of the loan if there is spare cash.
+        
+        Strategy:
+        - Use up to 20% ofr current cash balance to pay down loan,
+        but never let cash go below zero.
+        """
+
+        if self.loan_balance <= 0 or self.cash_balance <= 0:
+            return 0.0
+        
+        max_repay = self.cash_balance * 0.20 #use 20% of cash balance
+        repay_amount = min(max_repay, self.loan_balance)
+
+        self.loan_balance -= repay_amount
+        self.cash_balance -= repay_amount
+
+        print(f"\nAn automatic loan repayment of £{repay_amount:.2f} has been made.")
+        print(f" Remaining loan balance: £{self.loan_balance:.2f}.\n")
+        return repay_amount
     
     ## Bankrupt or not 
     def bankrupt(self):
