@@ -18,6 +18,11 @@ def get_input(prompt, default=None):
                 return default
             print("Please enter a number.")
             continue
+
+        if (raw.startswith("0") and raw != "0"):
+            print("Invalid input. Do not include leading zeros.")
+            continue
+        
         try:
             value = int(raw)
             if value < 0:
@@ -172,7 +177,7 @@ def manage_florists(shop):
             print("\nCurrent florists you can fire:")
             for florist in shop.florists:
                 print(f"  - {florist.name}")
-                
+
             name = input("Enter the name of the florist to \033[1mFIRE\033[0m: ").strip()
             if not name:
                 print("Name cannot be empty.")
