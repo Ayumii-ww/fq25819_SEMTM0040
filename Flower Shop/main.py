@@ -153,15 +153,26 @@ def manage_florists(shop):
     if max_fire == 0:
         print("You must employ at least one florist. No one can be fired.\n")
         return
+    
+    while True:
 
-    fire_count = get_input("How many florists would you like to \033[1mFIRE\033[0m this month? (0 for none): ", default=0)
+        fire_count = get_input(
+            "How many florists would you like to \033[1mFIRE\033[0m this month? (0 for none): ", 
+            default=0
+        )
 
-    if fire_count > max_fire:
-        print(f"You can only \033[1mFIRE\033[0m up to {max_fire} florists this month.")
-        fire_count = max_fire
+        if fire_count > max_fire:
+            print(f"You can only \033[1mFIRE\033[0m up to {max_fire} florists this month.")
+            print("Please enter a valid number.\n")
+            continue
+        break
 
     for i in range(fire_count):
         while True:
+            print("\nCurrent florists you can fire:")
+            for florist in shop.florists:
+                print(f"  - {florist.name}")
+                
             name = input("Enter the name of the florist to \033[1mFIRE\033[0m: ").strip()
             if not name:
                 print("Name cannot be empty.")
