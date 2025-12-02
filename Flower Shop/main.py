@@ -22,7 +22,7 @@ def get_input(prompt, default=None):
         if (raw.startswith("0") and raw != "0"):
             print("Invalid input. Do not include leading zeros.")
             continue
-        
+
         try:
             value = int(raw)
             if value < 0:
