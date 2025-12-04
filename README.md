@@ -116,43 +116,43 @@ This part of coursework uses Python along with several external libraries that a
 
 **Mac/Linux**
 
-'''
+```
 %pip install requests pandas numpy matplotlib nltk seaborn statsmodels scipy
-'''
+```
 
 Or 
 
 **Window (Command Prompy/Powershell)**
 
-'''
+```
 pip install requests pandas numpy matplotlib nltk seaborn statsmodels scipy
-'''
+```
 
 ## Step 1.5 **Fixing NLTK SSL Certificate Errors 
 
 In case you get errors like:
 
-'''
+```
 CERTIFICATE_VERIFY_FAILED
 Error loading vader_lexicon
 Error loading stopwords
-'''
+```
 
 Run this before downloading NLTK corpora: 
 
-'''
+```
 import ssl
 ssl._create_default_https_context = ssl._create_unverified_context
-'''
+```
 
 Then Downloand required NLTK corpora:
 
-'''
+```
 import nltk
 nltk.download('vader_lexicon')
 nltk.download('stopwords')
 nltk.download('punkt')
-'''
+```
 
 These are for 
 - **Sentiment Analysis**
@@ -161,12 +161,12 @@ These are for
 
 ## Step 2. Required NLTK download 
 
-'''
+```
 import nltk
 nltk.download('vader_lexicon')
 nltk.download('stopwords')
 nltk.download('punkt')
-'''
+```
 
 If SSL fails, apply **Step 1.5**
 
