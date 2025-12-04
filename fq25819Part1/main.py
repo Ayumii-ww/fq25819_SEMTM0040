@@ -19,7 +19,11 @@ def get_input(prompt, default=None):
             print("Please enter a number.")
             continue
 
-        if (raw.startswith("0") and raw != "0"):
+        if not raw.isdigit():
+            print("Invalide imput. Please enter digits only (no spaces or symbols).")
+            continue
+
+        if raw.startswith("0") and raw != "0":
             print("Invalid input. Do not include leading zeros.")
             continue
 
@@ -32,6 +36,55 @@ def get_input(prompt, default=None):
         except ValueError:
             print("Invalid input, please enter an integer.")
 
+def get_positive_int(prompt, default=None):
+    """
+    Reads a strictly positive integer (1, 2, 3, ...).
+    Rejects:
+        - 0
+        - leading zeros (e.g., '01', '007')
+        - non-digit characters ('1_2', '3-4', 'abc')
+
+    Uses for month only
+    """
+    while True:
+        raw = input(prompt).strip()
+
+        # Default handling
+        if not raw:
+            if default is not None:
+                return default
+            print("Please enter a number.")
+            continue
+
+        # Must be digits only
+        if not raw.isdigit():
+            print("Invalid input. Please enter digits only (no spaces or symbols).")
+            continue
+
+        # Reject leading zeros or zero itself
+        if raw.startswith("0"):
+            print("Invalid input. Number must be a positive integer (no leading zeros).")
+            continue
+
+        value = int(raw)
+
+        if value <= 0:
+            print("Please enter a number greater than 0.")
+            continue
+
+        return value
+    
+def get_yes_no(prompt):
+    """
+    Ask the user a yes/no question.
+    Only accepts 'y' or 'n' (case-insensitive).
+    Keeps asking until valid.
+    """
+    while True:
+        ans = input(prompt).strip().lower()
+        if ans in ("y", "n"):
+            return ans
+        print("Invalid input. Please enter 'y' for yes or 'n' for no.\n")
 
 def hire_initial_florists(shop):
     """
@@ -289,7 +342,7 @@ def main():
     print("Welcome to the FlowerShop Simulator!")
     print("---------------------------------------------------------------\n")
 
-    months = get_input(
+    months = get_positive_int(
         "How many months would you like to run the game for? (default 6): ",
         default=6,
     )
@@ -358,7 +411,7 @@ def main():
 
         if shop.bankrupt():
             print("Warning: Your cash balance is below £0.\n")
-            choice = input(
+            choice = get_yes_no(
                 "Would you like to take a bank loan to try to save the shop? (y/n):"
             ).strip().lower()
 
